@@ -54,6 +54,19 @@ section h2 {
     color: #fff;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-image {
+    height: 60px;
+    width: auto;
+    display: block;
+    object-fit: contain;
+}
+
 .nav-links a {
     margin-left: 24px;
     text-decoration: none;
@@ -67,7 +80,7 @@ section h2 {
 .hero-template {
     position: relative;
     height: 100vh;
-    background: url("images/kebun.jpg") center / cover no-repeat;
+    background: url("images/metik.jpg") center / cover no-repeat;
     color: #fff;
 }
 
