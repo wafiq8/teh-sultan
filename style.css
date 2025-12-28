@@ -25,7 +25,7 @@
  h1,
  h2,
  h3 {
-     color: var(--brown);
+     color: var(--cream);
  }
 
 
@@ -536,4 +536,14 @@
          display: block;
      }
 
+ }
+
+ @media (max-width: 768px) {
+     .zigzag-row {
+         max-width: 100%;
+     }
+ }
+
+ .hero-content h1 {
+     color: var(--cream);
  }
