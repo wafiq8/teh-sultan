@@ -8,6 +8,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const thumb = document.getElementById("videoThumb");
+        const iframe = document.getElementById("youtubeVideo");
+
+        thumb.addEventListener("click", function () {
+            iframe.src = "https://www.youtube.com/embed/MzR22tgN6V4?autoplay=1";
+            thumb.style.display = "none";
+            iframe.style.display = "block";
+        });
+    });
+</script>
+
 <body>
 
     <header class="hero-template">
@@ -106,7 +119,7 @@
         <div class="about-container">
 
             <div class="about-image">
-                <img src="images/teh-hitam2.png" alt="Menikmati teh bersama keluarga">
+                <img src="images/teh-hitam4.png" alt="Menikmati teh bersama keluarga">
             </div>
 
             <div class="about-text">
@@ -136,81 +149,142 @@
             </div>
 
         </div>
-    </section>
 
-    <section id="features" class="features-webekspor">
-        <div class="features-header">
-            <span class="features-label">KUALITAS TEH</span>
-            <h2>Kenapa Memilih Teh Sultan?</h2>
-            <p>
-                Teh Hitam Sultan terbuat dari daun teh premium yang diolah dengan metode CTC, sehingga kandungan
-                alaminya lebih mudah keluar saat diseduh. Seduhannya terasa mantap namun tetap ringan di perut, membantu
-                pencernaan terasa lebih nyaman. Karena itulah, teh ini cocok dijadikan minuman hangat harian untuk
-                mendukung kenyamanan usus secara alami.
-            </p>
-        </div>
+        <!-- EDUKASI VIDEO -->
+        <section class="edu-video">
+            <div class="edu-video-container">
 
-        <div class="features-grid">
-            <div class="feature-item">
-                <span class="corner-ornament"></span>
-                <img src="images/daun.jpg" alt="Daun teh pilihan">
-                <div class="feature-overlay">
-                    <h3>Daun Pilihan</h3>
-                    <p>Dipetik dari daun teh Camellia sinensis pilihan,
-                        menghadirkan kesegaran alami yang terasa sejak awal.
+                <!-- TEXT -->
+                <div class="edu-video-text">
+                    <span class="about-label">EDUKASI</span>
+                    <h2>Mengenal Teh Hitam Lebih Dekat</h2>
+                    <p>
+                        Video ini membantu memahami manfaat teh hitam bagi kesehatan, khususnya dalam membantu menjaga
+                        dan menurunkan kadar kolesterol, menjelaskan kandungan antioksidannya, serta cara penyajian yang
+                        tepat agar teh hitam dapat dikonsumsi dengan aman dan optimal sebagai bagian dari gaya hidup
+                        sehat.
                     </p>
                 </div>
+
+                <!-- VIDEO -->
+                <div class="edu-video-wrapper">
+
+                    <!-- THUMBNAIL -->
+                    <div class="video-thumb" id="videoThumb">
+                        <img src="images/tmbnlyt.png" alt="Video Edukasi Teh Hitam">
+                        <span class="play-btn">▶</span>
+                    </div>
+
+                    <!-- IFRAME (hidden dulu) -->
+                    <iframe id="youtubeVideo" src="" title="Manfaat Teh Hitam"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <section id="features" class="features-webekspor">
+            <div class="features-header">
+                <span class="features-label">KUALITAS TEH</span>
+                <h2>Kenapa Memilih Teh Sultan?</h2>
+                <p>
+                    Teh Hitam Sultan terbuat dari daun teh premium yang diolah dengan metode CTC, sehingga kandungan
+                    alaminya lebih mudah keluar saat diseduh. Seduhannya terasa mantap namun tetap ringan di perut,
+                    membantu
+                    pencernaan terasa lebih nyaman. Karena itulah, teh ini cocok dijadikan minuman hangat harian untuk
+                    mendukung kenyamanan usus secara alami.
+                </p>
             </div>
 
-            <div class="feature-item">
-                <span class="corner-ornament"></span>
-                <img src="images/cangkir.jpg" alt="Teh hangat">
-                <div class="feature-overlay">
-                    <h3>Nyaman Diminum</h3>
-                    <p>Hangatnya menenangkan, rasanya lembut, dan membuat perut terasa lebih tenang setiap tegukan.</p>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <span class="corner-ornament"></span>
+                    <img src="images/daun.jpg" alt="Daun teh pilihan">
+                    <div class="feature-overlay">
+                        <h3>Daun Pilihan</h3>
+                        <p>Dipetik dari daun teh Camellia sinensis pilihan,
+                            menghadirkan kesegaran alami yang terasa sejak awal.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="feature-item">
+                    <span class="corner-ornament"></span>
+                    <img src="images/cangkir.jpg" alt="Teh hangat">
+                    <div class="feature-overlay">
+                        <h3>Nyaman Diminum</h3>
+                        <p>Hangatnya menenangkan, rasanya lembut, dan membuat perut terasa lebih tenang setiap tegukan.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="feature-item">
+                    <span class="corner-ornament"></span>
+                    <img src="images/teh-hitam.jpg" alt="Teh alami">
+                    <div class="feature-overlay">
+                        <h3>Melalui Proses CTC</h3>
+                        <p>Proses CTC (Crush, Tear, Curl) mengolah daun teh menjadi butiran halus sehingga warna, aroma,
+                            dan
+                            kandungan alaminya lebih mudah keluar saat diseduh, menghasilkan teh yang konsisten rasanya
+                            dan
+                            nyaman diminum.</p>
+                    </div>
                 </div>
             </div>
+        </section>
 
-            <div class="feature-item">
-                <span class="corner-ornament"></span>
-                <img src="images/teh-hitam.jpg" alt="Teh alami">
-                <div class="feature-overlay">
-                    <h3>Melalui Proses CTC</h3>
-                    <p>Proses CTC (Crush, Tear, Curl) mengolah daun teh menjadi butiran halus sehingga warna, aroma, dan
-                        kandungan alaminya lebih mudah keluar saat diseduh, menghasilkan teh yang konsisten rasanya dan
-                        nyaman diminum.</p>
-                </div>
+        <section id="testimoni" class="testimoni-video">
+            <div class="testimoni-header">
+                <span class="testimoni-label">TESTIMONI</span>
+                <h2>Apa Kata Mereka?</h2>
             </div>
-        </div>
-    </section>
 
-    <section id="testimoni" class="testimoni-video">
-        <h2>Apa Kata Mereka?</h2>
+            <div class="testimoni-list">
 
-        <div class="video-wrapper">
-            <video controls poster="images/kimia.jpg">
-                <source src="videos/testimoni-2.mp4" type="video/mp4">
-                Browser Anda tidak mendukung video.
-            </video>
-        </div>
+                <div class="testimoni-item">
+                    <div class="video-wrapper">
+                        <video controls poster="images/testimoni2.png">
+                            <source src="videos/testimoni-2.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <p class="testimoni-name">
+                        Bapak Iswanto & Ibu Salamah<br>
+                        <span>Ngaglik, Sleman</span>
+                    </p>
+                </div>
 
-        <p class="video-caption">
-            Testimoni pelanggan yang rutin menikmati Teh Sultan
-        </p>
-    </section>
+                <div class="testimoni-item">
+                    <div class="video-wrapper">
+                        <video controls poster="images/testimoni3.png">
+                            <source src="videos/testimoni-3.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <p class="testimoni-name">
+                        Ibu Sanum<br>
+                        <span>Grogolan, Boyolali</span>
+                    </p>
+                </div>
+
+            </div>
+        </section>
 
 
-    <section class="cta-final">
-        <h2>Siap Menikmati Teh Hangat Hari Ini?</h2>
-        <p>
-            Temani waktu santai bersama keluarga dengan Teh Sultan
-            yang nyaman diminum setiap hari.
-        </p>
-        <a href="https://wa.me/6285156075325" class="cta-button">
-            Chat WhatsApp Sekarang
-        </a>
-    </section>
 
-    <footer class="footer">
-        <p>© 2025 Teh Hitam Sultan. Semua Berhak Sehat.</p>
-    </footer>
+        <section class="cta-final">
+            <h2>Siap Memulai Kebiasaan Sehat dengan Teh Hitam Hari Ini?</h2>
+            <p>
+                Mulai kebiasaan sehat dengan segelas teh hitam hari ini.
+            </p>
+            <a href="https://wa.me/6285156075325" class="cta-button">
+                Chat WhatsApp Sekarang
+            </a>
+        </section>
+
+        <footer class="footer">
+            <p>© 2025 Teh Hitam Sultan. Semua Berhak Sehat.</p>
+        </footer>
